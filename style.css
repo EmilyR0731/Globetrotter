@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-header {
+  background-color: teal;
+  padding: 10px;
+
+}
+
+.nav-header a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+.photo-gallery-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.banner {
+  background-image: url('./Images/citybackground.jpg');
+  background-size: cover;
+  /* Adjust as necessary */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent tiling */
+  color: white;
+  /* Text color for visibility */
+  text-align: center;
+  /* Center the text */
+  padding: 100px 20px;
+  /* Adjust padding for spacing */
+  position: relative;
+  /* Needed for pseudo-elements */
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Optional: semi-transparent overlay for better text readability */
+  z-index: 1;
+}
+
+.banner h1,
+.banner p {
+  position: relative;
+  z-index: 2;
+}
+  .home-info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #bridge {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 20px;
+    border-color: teal;
+  }
+
+  .chicken-rib-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
